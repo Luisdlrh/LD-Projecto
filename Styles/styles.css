@@ -1,0 +1,207 @@
+/*Selector + propiedad + valor
+
+Selector {
+propiedad: valor
+}
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@font-face {
+    font-family: yoster ;
+    src: url(../Images/yoster.ttf);
+}
+
+p{color: rgb(31, 12, 77);}
+h1{color: rgb(21, 226, 117); font-family:'Bitcount Grid Double', sans-serif;}
+h2{color: rgb(65, 176, 180);}
+h3{color: blueviolet;}
+li{list-style: none; margin-bottom: 10px;}
+a{text-decoration: none;}
+.tituloindex{display: flex; color: rgb(65, 176, 180); align-items: center; justify-content: center;font-size: xx-large;}
+
+body{
+    background-image: url('./images/background.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;        /* Escala la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat;  /* Evita que se repita */
+    background-position: center;   /* Centra la imagen */
+    margin: 0; /* Muy importante para evitar espacio alrededor */
+}
+
+/* HEADER - */
+
+/* logo centrado - flexbox*/
+.logocentrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ajustar imagen*/
+.logo {
+    width: 20vw;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* PARA COLOCAR A UN LADO, LO USE EN TODAS LAS BARRAS DE NAVEGACION */
+.navegacion {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    height: auto;
+    width: auto;
+    font-size: larger;
+    
+}
+
+/*Para cambiar color segun pagina*/
+.paginaactual{color: rgb(21, 226, 117)}
+
+
+/* MAIN COSAS */
+.imginicio{width: 20vw;height: auto;}
+
+.juegosindex{
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    flex-wrap: wrap; 
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* sobre nosotros */
+.titulosn{
+    text-align: center;
+}
+.equipotrabajo{
+    display: flex;
+}
+.imgequipo{
+    width: 50vw;height: auto;
+}
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* GALERIA */
+.galeriajuegos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    
+}
+/* esto fue para darle diseño especial a la imagen */
+.galeriajuegos img:hover {transform: scale(1.05)}
+
+/* GRID */
+.gridgaleria{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+/* CONTACTO GRID */
+.titulocontacto{ text-align: center;}
+
+/* formulario centrado y organizao*/
+.contformulario {
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0;
+}
+
+.formulariogrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgb(21, 226, 117);
+    border-radius: 8px;
+}
+
+
+.formulariogrid form {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Derechos reservados*/
+.dr{color:gray; font-size: small; font-family: yoster ;}
+
+
+.redsocial{
+    margin: 0 10px;
+}
+
+.gallery{width: 20vw;height: auto;}
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* CELULAR */
+@media (max-width: 425px){
+    body{
+        flex-wrap: wrap;
+    }
+
+    .navegacion{
+        position: absolute; /*preguntas porq absoluto*/
+        top: 10px;
+        right: 10px;
+        height: auto;
+        width: auto;
+        font-size: medium;
+    }
+
+    .navegacion ul {
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
+    .formulariogrid {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: none;
+    }
+
+    .formulariogrid form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    }
+
+

@@ -1,0 +1,114 @@
+<!-- El archivo principal siempre se llamara index y termina el html -->
+<!-- Atajo para estructura basica es con "!" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LD Project - Inicio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="icon" href="./images/Logo1.png" type="image/x-icon">
+</head>
+
+<!-- Body contiene todo el codigo que se muestra en la web, usamos header main y footer siempre -->
+<body>
+
+
+    <header class="logocentrado">
+    <!-- Aqui colocaremos logo, titulo y barra de navegacion -->
+
+    <!-- colocar imagen, en este caso tiene 2 propiedades, src: ruta de imagen, alt: comentario sobre la imagen, nosotros le agregamos title -->
+    <a href="./index.html">
+        <img src="./images/Logo1.png" alt="Logo LD" title="Logo" class="logo">
+    </a>
+    
+
+    <!-- Etiquetas para la muestra usamos h1 a h6, h1 solo se usa una vez por archivo 
+    no nos podemos salta de h2 a h6, debe ser en orden-->
+        <h1>LD project</h1>
+
+    <!-- Esta etiqeuca nos permite navegar atravez de nuestras paginas - debe ser una lista para nuestro projecto -->
+        
+    <nav>
+            <!-- tenemos etiqueta ol (ordenada) y ul(desordenada) para listas, y li (list item) es para el item dentro de la misma -->
+            <ul class="navegacion">
+                <li>
+                    <!-- usamos etiqueta "a" para crear un anclaje o lograr la navegacion, href="" es la ubicacion donde ir -->
+                    <!-- Debemos buscar la carpeta adecuada con "./" selecciona un archivo de donde esto -click en contacto, 
+                    cuando las paginas estan todas juntas podemos borrar "pages" o si vamos desde una pagina al index usamos "../" porque hay que retrocered-->
+                    <a href="./Pages/galeria.html">Galeria</a>
+                </li>
+
+                <li>
+                    <a href="./Pages/sobrenosotros.html">Sobre nosotros</a>
+                </li>
+                
+                <li>
+                    <a href="./Pages/tienda.html">Tienda</a>
+                </li>
+
+                <li>
+                    <a href="./Pages/contacto.html">Contactanos</a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+    
+<!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <h2 class="tituloindex">Bienvenido</h2>
+        <!-- etiqueta generica div, para separar en bloques, section define una seccion 
+        tambien esta side or article para informacion extra-->
+        <section class="juegosindex">
+            <article>
+                <h3>Recomendado del mes - Death stranding</h3>
+                <img src="./images/DT.jpg" alt="DT1" class="imginicio">
+                <p class="imgdt descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, a molestiae. Ipsum accusantium aperiam ea assumenda obcaecati, totam laudantium iusto suscipit quo similique hic blanditiis nihil dolores. Quaerat, eligendi eos?
+                </p>
+            </article>
+
+            <article>
+                <h3>Juego del año 2024</h3>
+                <img src="./images/astrobot.avif" alt="AB" class="imginicio">
+                <p class="imgdt descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, a molestiae. Ipsum accusantium aperiam ea assumenda obcaecati, totam laudantium iusto suscipit quo similique hic blanditiis nihil dolores. Quaerat, eligendi eos?
+                </p>
+            </article>
+
+            <article>
+                <h3>Descubrimiento del dia</h3>
+                <img src="./images/nier.jpg" alt="nier" class="imginicio">
+                <p class="imgdt descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, a molestiae. Ipsum accusantium aperiam ea assumenda obcaecati, totam laudantium iusto suscipit quo similique hic blanditiis nihil dolores. Quaerat, eligendi eos?
+                </p>
+            </article>
+
+        </section>
+    
+    </main>
+
+    <footer>
+        <!-- debe tener titulo de derechos reservados y creado by y redes sociales -->
+        <h2 class="dr">Derechos reservados</h2>
+        <h2 class="dr">Creado por LD</h2>
+
+        <!-- usamos nav para colocar redes sociales
+        Dentro de "a" que es quien nos deja navegar podemos colocar una imagen para que solo dando click a la imagen nos redirija
+        y podemos colocar "target= "_blank""" para que habra en una pestaña-->
+        <nav>
+            <a href="https://www.facebook.com/" target="_blank" class="redsocial" >
+                <img src="./images/facebook logo.png" alt="Logo de facebook" width="75" height="auto">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" class="redsocial">
+                <img src="./images/Instagram_logo_2022.svg" alt="Logo de insta" width="75" height="auto">
+            </a>
+            
+        </nav>
+
+    </footer>
+</body>
+</html>
